@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Weather Forcasting</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <main>
+      <section id="mainArea">
+        <div class="mainDiv">
+          <h1 id="mainHeading">Weather Forcasting</h1>
+          <form id="userForm">
+            <input
+              type="text"
+              id="cityInput"
+              placeholder="Enter City Name"
+              required
+              class="input"
+            />
+            <input type="submit" value="Search" class="submit" />
+          </form>
+          <h2 id="city">City Name</h2>
+          <p id="region">region <span id="country">Country</span></p>
+          <p class="time">Local Time : <span id="localTime">00000</span></p>
+          <div class="imgParent">
+            <img   id="image" />
+          </div>
+          <p id="temprature">
+            temprature<span>C<sup>o</sup></span>
+          </p>
+          <div class="col">
+            <div class="row">
+              <div class="box">
+                windSpeed
+                <span id="windSpeed"></span>
+              </div>
+              <div class="box">
+                humidity
+                <span id="humidity"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="box">
+                feelsLike
+                <span id="feelsLike"></span>
+              </div>
+              <div class="box">
+                visibility
+                <span id="visibility"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

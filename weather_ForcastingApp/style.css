@@ -1,0 +1,145 @@
+   * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #mainArea {
+        background-image: linear-gradient(
+          to right top,
+          #051937,
+          #002366,
+          #002a95,
+          #0029c2,
+          #4d12eb
+        );
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mainDiv {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 32vw;
+        gap: 5px;
+        padding: 10px 0 10px 0;
+        box-shadow: #ffffff 0 0 15px;
+        
+      }
+      .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .box {
+        height: 10vh;
+        width: 12vw;
+        background-color: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #0e1ed1;
+        font-weight: bold;
+        gap: 5px;
+      }
+
+      .box span{
+        color: #000000;
+      }
+      .imgParent {
+        height: auto;
+        width: 12vw;
+        border-radius: 10px;
+        background-color: #002366;
+      }
+      #image {
+        height: inherit;
+        width: inherit;
+        border-radius: inherit;
+      }
+      .input {
+        height: 5vh;
+        width: 15vw;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        text-align: center;
+      }
+      .submit {
+        height: 5vh;
+        width: 7vw;
+        border-radius: 5px;
+        border: none;
+        background-color: #002a95;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      @media (max-width: 1600px) {
+        .mainDiv{
+            padding:  20px 40px 20px 40px;
+            height: auto;
+            width: auto;
+            
+        }
+        .imgParent{
+            height: auto;
+            width: 10vh;
+        }
+        .submit{
+            height: auto;
+            width: auto;
+            padding: 10px;
+        }
+        .box{
+            height: auto;
+            width: 10vw;
+            padding: 20px;
+        }
+       
+        #mainHeading{
+            font-size: x-large;
+        }
+        #city{
+            font-size: medium;
+        }
+      }
+      @media (max-width: 767.98px) {
+        #mainHeading{
+            font-size: large;
+        }
+        .mainDiv{
+            text-align: center;
+        }
+        .input{
+            height: auto;
+            width: auto;
+            padding: 5px;
+        }
+        .row{
+            flex-direction: column;
+        }
+        .box{
+                flex-direction: row;
+                width: auto;
+                
+            }
+            
+
+      }
+      
