@@ -26,7 +26,7 @@
 document.getElementById("image").src = resp.current.condition.icon;
                 
               let temp = document.getElementById("temprature").innerText =
-                resp.current.temp_c;
+                "Teprature= "+resp.current.temp_c;
 
               let windSpeed = document.getElementById("windSpeed").innerText =
                 resp.current.wind_kph;
