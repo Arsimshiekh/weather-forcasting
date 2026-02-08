@@ -1,4 +1,4 @@
-     const userForm = document
+const userForm = document
         .getElementById("userForm")
         .addEventListener("submit", (e) => {
           e.preventDefault();
@@ -11,7 +11,8 @@
             .then((resp) => resp.json())
             .then((resp) => {
               console.log(resp);
-              
+                          document.getElementById("mainHeading").innerText="Weather Forecasting"
+
 
               let city = (document.getElementById("city").innerText =
                 resp.location.name);
@@ -42,4 +43,3 @@ document.getElementById("image").src = resp.current.condition.icon;
             document.getElementById("mainHeading").innerText="Error Wrong Input"
         })
         })
-        
